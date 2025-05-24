@@ -6,7 +6,7 @@
 
 ## 🚀 Features
 
-- 🔍 Input single gene or bulk upload (CSV/Excel)
+- 🔍 Input single gene
 - 🧠 Returns predicted:
   - Gene function
   - Pathway associations
