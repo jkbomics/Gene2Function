@@ -1,4 +1,9 @@
 import streamlit as st
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from utils.helpers import search_gene_function
 
 st.set_page_config(page_title="Gene2Function", layout="centered")

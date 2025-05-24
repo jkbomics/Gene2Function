@@ -1,20 +1,33 @@
+# utils/helpers.py
+
+from biothings_client import get_client
+
 def search_gene_function(gene_id):
-    # Placeholder logic — we can replace this with real API calls or models later
-    dummy_data = {
-        "BRCA1": {
-            "function": "DNA repair",
-            "pathway": "Homologous recombination",
-            "disease": "Breast cancer"
-        },
-        "TP53": {
-            "function": "Tumor suppressor",
-            "pathway": "Cell cycle regulation",
-            "disease": "Various cancers"
-        },
-        "EGFR": {
-            "function": "Growth factor receptor",
-            "pathway": "EGFR signaling pathway",
-            "disease": "Lung cancer"
-        }
-    }
-    return dummy_data.get(gene_id.upper())
+    """
+    Queries MyGene.info to fetch gene function, pathway, and disease-related information.
+    """
+    mg = get_client('gene')
+
+    try:
+        # Search the gene symbol
+        res = mg.query(gene_id, species='human', fields='symbol,name,summary,pathway')
+
+        if res and res['hits']:
+            hit = res['hits'][0]
+            gene_symbol = hit.get('symbol', '')
+            gene_name = hit.get('name', '')
+            summary = hit.get('summary', '')
+            pathway = hit.get('pathway', {})
+
+            return {
+                "symbol": gene_symbol,
+                "name": gene_name,
+                "function": summary,
+                "pathway": pathway if pathway else "Not available",
+                "disease": "To be integrated"  # Placeholder for next step
+            }
+        else:
+            return None
+
+    except Exception as e:
+        return {"error": str(e)}
