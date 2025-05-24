@@ -26,6 +26,15 @@
 
 ---
 
+## 📈 Future Scope
+
+- 🔍 Integration with Enrichr and Harmonizome APIs  
+- 📊 Add heatmaps, network plots, and charts  
+- 🤖 Optional GPT/BioBERT integration for intelligent annotation  
+- 🧬 Organism-agnostic annotation using UniProt cross-references
+
+---
+
 ## 📦 Installation
 
 ```bash
@@ -35,3 +44,11 @@ conda create -n gene2func python=3.10 -y
 conda activate gene2func
 pip install -r requirements.txt
 streamlit run app/main.py
+
+---
+
+## 👩‍💻 Author
+
+**Helga Jenifer M**  
+[LinkedIn](https://www.linkedin.com/in/helga-jenifer-m-208977147)  
+Freelance Bioinformatician | AI in Bioinformatics Enthusiast 
