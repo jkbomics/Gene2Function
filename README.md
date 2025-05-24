@@ -29,7 +29,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/<your-username>/Gene2Function.git
+git clone https://github.com/jkbomics/Gene2Function.git
 cd Gene2Function
 conda create -n gene2func python=3.10 -y
 conda activate gene2func
