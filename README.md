@@ -1,22 +1,36 @@
 # 🧬 Gene2Function
 
-Gene2Function is a lightweight, modular bioinformatics tool built with Streamlit. It accepts gene symbols/IDs as input and returns functional annotation, pathway involvement, and disease enrichment (DisGeNET API support coming soon).
+**Gene2Function** is a modular Streamlit-based bioinformatics tool that takes gene IDs or symbols as input and provides predicted functional annotations, associated pathways, and potential disease links. The tool is under active development and aims to help researchers quickly gather functional insights.
+
+---
 
 ## 🚀 Features
-- Input gene symbol or upload list
-- Returns:
-  - Gene function summary
-  - Pathways (via BioThings)
-  - Disease associations (upcoming)
 
-## 📦 Tech Stack
-- Python
-- Streamlit
+- 🔍 Input single gene or bulk upload (CSV/Excel)
+- 🧠 Returns predicted:
+  - Gene function
+  - Pathway associations
+  - Disease enrichment (coming soon via DisGeNET)
+- ✅ Simple web UI built with Streamlit
+- 🔗 Modular and expandable codebase
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.10
+- [Streamlit](https://streamlit.io/)
 - Biothings API
-- DisGeNET API (in progress)
+- DisGeNET (planned)
+- Pandas, Requests
 
-## 🔧 Setup
+---
+
+## 📦 Installation
+
 ```bash
+git clone https://github.com/<your-username>/Gene2Function.git
+cd Gene2Function
 conda create -n gene2func python=3.10 -y
 conda activate gene2func
 pip install -r requirements.txt
