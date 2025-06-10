@@ -44,7 +44,7 @@ conda create -n gene2func python=3.10 -y
 conda activate gene2func
 pip install -r requirements.txt
 streamlit run app/main.py
-
+```
 ---
 
 ## 👩‍💻 Author
