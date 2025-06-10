@@ -1,7 +1,8 @@
 # 🧬 Gene2Function
 
-**Gene2Function** is a modular Streamlit-based bioinformatics tool that takes gene IDs or symbols as input and provides predicted functional annotations, associated pathways, and potential disease links. The tool is under active development and aims to help researchers quickly gather functional insights.
-
+**Gene2Function** is a modular, multi-page, Streamlit-based bioinformatics tool that takes gene IDs or symbols as input and provides predicted functional annotations, associated pathways, and potential disease links. Built for speed and usability, this app empowers researchers to quickly extract and explore gene-level biological insights.
+---
+✅ Now supports scroll navigation, multi-page interface, and interactive plots for GO terms and pathways!
 ---
 
 ## 🚀 Features
@@ -9,10 +10,31 @@
 - 🔍 Input single gene
 - 🧠 Returns predicted:
   - Gene function
-  - Pathway associations
+  - Pathway associations (KEGG, Reactome, WikiPathways, etc.)
+  - GO terms: Biological Process, Molecular Function, Cellular Component
+  - Cross-references: Entrez, UniProt, PharmGKB, Taxonomy ID
   - Disease enrichment (coming soon via DisGeNET)
-- ✅ Simple web UI built with Streamlit
-- 🔗 Modular and expandable codebase
+ 
+---
+
+📊 Visualizations (NEW)
+  - Interactive pie charts for GO terms and pathway database distribution.
+  - Per-plot customization controls (height, font, colors).
+  - View Top 10 GO terms for better interpretability.
+📋 Gene Function Table (Enhanced)
+  - Dual display:
+     - ✅ Clickable HTML table for enriched info.
+     -✅ Filterable Streamlit table for clean, interactive exploration.
+  - CSV export and preview options included.
+  - 🔄 Scroll to Top/Bottom buttons for seamless navigation in long tables.
+🗂️ UI & Navigation (NEW)
+  - Multi-page app with:
+    - main.py: Gene search + plots
+    - pages/1_Gene_Table.py: Full annotation table
+  - Streamlit sidebar collapsed by default for a cleaner view.
+  - "View Gene Table" navigation button.
+🔗 Modular & Expandable Codebase
+  - Built for flexibility: Easily integrate APIs, visualization libraries, or ML models.
 
 ---
 
@@ -21,17 +43,17 @@
 - Python 3.10
 - [Streamlit](https://streamlit.io/)
 - Biothings API
-- DisGeNET (planned)
 - Pandas, Requests
+- DisGeNET (⚙️ integration coming soon)
 
 ---
 
 ## 📈 Future Scope
 
-- 🔍 Integration with Enrichr and Harmonizome APIs  
-- 📊 Add heatmaps, network plots, and charts  
-- 🤖 Optional GPT/BioBERT integration for intelligent annotation  
-- 🧬 Organism-agnostic annotation using UniProt cross-references
+- 🧬 Organism-agnostic annotation via UniProt cross-references  
+- 📊 Add heatmaps, network plots, and advanced charts 
+- 🤖 AI integration with GPT/BioBERT for intelligent annotation  
+- 🔍 Use external enrichment tools (e.g., Enrichr, Harmonizome)
 
 ---
 
