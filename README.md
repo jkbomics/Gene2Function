@@ -2,7 +2,7 @@
 
 **Gene2Function** is a modular, multi-page, Streamlit-based bioinformatics tool that takes gene IDs or symbols as input and provides predicted functional annotations, associated pathways, and potential disease links. Built for speed and usability, this app empowers researchers to quickly extract and explore gene-level biological insights.
 ---
-  ✅ Now supports scroll navigation, multi-page interface, and interactive plots for GO terms and pathways!
+    ✅ Now supports scroll navigation, multi-page interface, and interactive plots for GO terms and pathways!
 ---
 
 ## 🚀 Features
