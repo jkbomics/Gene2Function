@@ -78,7 +78,7 @@ pip install -r requirements.txt
 streamlit run app/main.py
 
 ```
-            💡 Note: If you encounter an error related to pyarrow, ensure that cmake is installed prior to installing other dependencies.
+    💡 Note: If you encounter an error related to pyarrow, ensure that cmake is installed prior to installing other dependencies.
 ---
 
 ## 👩‍💻 Author
