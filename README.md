@@ -60,12 +60,23 @@
 ## 📦 Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/jkbomics/Gene2Function.git
 cd Gene2Function
+
+# Create and activate a conda environment
 conda create -n gene2func python=3.10 -y
 conda activate gene2func
+
+# Install cmake manually to avoid pyarrow installation issues
+pip install cmake
+
+# Install all required Python packages
 pip install -r requirements.txt
+
+# Run the Streamlit app
 streamlit run app/main.py
+
 ```
 ---
 
